@@ -19,7 +19,7 @@ Either use your own local installation of following tools:
 * Docker see ...
 
 Or use the following VM, that contains the needed tools:
-... TODO ...
+... TODO ... 
 
 ## Development Environment Configuration
 
@@ -29,10 +29,9 @@ Or use the following VM, that contains the needed tools:
 
 * Open IntelliJ
 * New/Project from sources
-* clone from https://gitlab.dev.ifs.hsr.ch/mas-se-project-automation/project-automation
-* Check use gradle model
+* clone from https://gitlab.dev.ifs.hsr.ch/mas-se-project-automation/project-automation.git
+* Check to use gradle model and gradle wrapper (default) on next pages and finish the import
 * ... TODO
-
 
 ## CI/CD Jenkins Server
 
