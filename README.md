@@ -12,5 +12,5 @@ See ...
 
 ## Authors & Contacts
 
-Rolf Bruderer, rolf.bruderer@hsr.ch
-Jean-Daniel Merkli, jean-daniel.merkli@hsr.ch
+* Rolf Bruderer, rolf.bruderer@hsr.ch
+* Jean-Daniel Merkli, jean-daniel.merkli@hsr.ch
