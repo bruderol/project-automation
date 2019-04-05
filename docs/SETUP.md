@@ -27,4 +27,18 @@ Or use the following VM, that contains the needed tools:
 
 ## Setup Project
 
+* Open IntelliJ
+* New/Project from sources
+* clone from https://gitlab.dev.ifs.hsr.ch/mas-se-project-automation/project-automation
+* Check use gradle model
+* ... TODO
+
+
+## CI/CD Jenkins Server
+
+See http://sinv-56080.edu.hsr.ch to access the Jenkins CI Server for the project.
+
+You can use following user accounts for this exercise:
+
 ... TODO ...
+
