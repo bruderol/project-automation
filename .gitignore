@@ -2,6 +2,8 @@
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 
+
+
 ### STS ###
 .apt_generated
 .classpath
@@ -12,11 +14,14 @@
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/**
 *.iws
 *.iml
 *.ipr
 /out/
+
+### IntelliJ Run Configuraitons (to be shared) ###
+!.idea/runConfigurations
 
 ### NetBeans ###
 /nbproject/private/
