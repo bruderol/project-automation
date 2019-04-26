@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'openjdk:12.0.1'
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
