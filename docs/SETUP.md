@@ -13,9 +13,13 @@
 ## Development Environment
 
 Either use your own local installation of following tools:
-* Java JDK, Version 9, see ...
-* Git, see ... 
-* IntelliJ Community Edition, Version 1019.1 or later, see https://www.jetbrains.com/idea/download/
+* Java JDK, Version 12, from here: https://jdk.java.net/12/
+* IntelliJ IDEA, Version 2019.1 or later, see https://www.jetbrains.com/idea/download/
+    * we recommend to use the Ultimate version: 
+      you can either use a trial verison or get e a student licence from here:   
+      https://www.jetbrains.com/shop/eform/students
+    * IDEA Community Edition might as well work to do most of the exercise, with small limitations
+* Git ??
 * Docker see ...
 
 Or use the following VM, that contains the needed tools:
@@ -37,7 +41,7 @@ Or use the following VM, that contains the needed tools:
 
 See http://sinv-56080.edu.hsr.ch to access the Jenkins CI Server for the project.
 
-You can use following user accounts for this exercise:
+You can use following user account for this exercise:
 
-... TODO ...
-
+username: student
+password: autom@tion$1
