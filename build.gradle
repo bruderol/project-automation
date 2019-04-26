@@ -1,0 +1,29 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.4.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'ch.hsr.projectautomation'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+bootJar.doLast {
+	// Copy to a version free artifact for easier reference of last build result for testing purpose
+	copy {
+		from bootJar
+		into 'build/libs'
+		rename('chatbot.*.jar', 'chatbot.jar')
+	}
+}
