@@ -8,11 +8,11 @@ See [Development Environment Setup](docs/SETUP.md) for how to develop this demo 
 
 ## Exercise Instructions
 
-See ... for exercise instructions.
+See (docs/README.md) for exercise instructions.
 
-## Further Readings
+## References / Further Readings
 
-See [Further Readings](./docs/Readings.md) for further links to tutorials and guides about used technologies.
+See [References](docs/References.md) for further links to tutorials and guides about used technologies.
 
 ## Authors & Contacts
 
