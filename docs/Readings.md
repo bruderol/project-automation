@@ -2,6 +2,12 @@
 
 Some more useful guides and doccumentation about used technologies in this demo project.
 
+## Git
+
+Recommended tutorials for using Git, in case you are new to Git or need help:
+ * [https://git-scm.com/doc](https://git-scm.com/doc)
+ * online version of the book [https://git-scm.com/book](https://git-scm.com/book)
+
 ## Gradle
 
 * [Official Gradle Documentation](https://docs.gradle.org)
