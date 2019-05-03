@@ -104,22 +104,22 @@ For login to the VM use following credentials:
 
 #### Starting Applications
 
-* Inside the VM use `Activities` to find applications you can start (use the doted icon to find more apps)
+* Inside the VM use `Activities` on the upper left to find applications you can start (use the doted icon to find more apps)
 * We recommend to quickly start the following applications for initial configuration:
     * Terminal (under Utilities)
     * IntelliJ (see initial setup further below)  
-* It might be useful to pin these applications as Favorites in the right hand side Activities Menu
+* It might be useful to pin these applications as Favorites in the left hand side Favourites Start Bar
 
 ### Vagrant Configuration of the VM
 
-In case you are interested in the automated setup and configuration of such a Developer VM,
+In case you are interested in how the automated setup and configuration of such a Developer VM works,
 you can study the configuration of the VM in this repository here:
 https://github.com/bruderol/vagrant-dev-env 
 * see Vagrantfile
 * see provision.sh
 * see README.md for installed tools and more information
 
-It is so simple to share a VM with your working colleagues like this 
+It is that simple to share a VM with your working colleagues like this 
 and have a well defined and consistent common development environment throughout the team, 
 that is easy to maintain in code.
 
@@ -141,7 +141,7 @@ After you installed the tools you need to do following minimal configurations:
      ```
      See also here: [https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-### IntelliJ Setup
+### Configure IntelliJ
 
 * IntelliJ will ask you some questions on first startup. We recommend to just use default settings (plugins etc.)
 * It will ask you for a license:
@@ -170,11 +170,54 @@ After you installed the tools you need to do following minimal configurations:
   * go to `File`/`Project Structure`
   * in `Project`-Tab under `Project SDK`: the JDK you have installed should be selected - if not yet, you can add it now using `New...` and then browse to the jdk directroy inside your java installation directory.
 
+## Build and Test the Project
+
+Simply **Run the full Gradle build** to execute the full automated build including the tests:
+* Open `Gradle`-Tab: usually on the right side, but first time you might need to choose `View`/`Tool Windows`/`Gradle`.
+* In the tab you should see the project `project-automation`
+* Open `project-automation` and then open `Tasks` and then `build`.
+* Select the tasks `clean` and `build` both together and open context menu with right click on them
+* Then select `Run ...` to execute the build with all tests
+* The gradle build will not only build your software but also download all needed dependencies \(**WARNING: This needs a reliable internet connection that does not block maven repositories!**\)
+* You should see `BUILD SUCCESSFUL` in the run console window \(bottom of IntelliJ\). If not, there is something wrong with your setup.
+* In the exercise you should execute this same build before each commit to ensure that you did not somehow break the build or some tests - the build of your IDE is a different build and might not necessarily always do exactly the same.
+* For that a run configuration has been added to the top toolbar on the right for you, so you can next time easily execute same command by simply selecting it from the dropdown there and press the green play button besides of it.
+* In case you prefer command line you can as well use `gradlew clean build` on your command line in the project's directory to execute the same build.
+   
+## Start the Application
+
+**Starting the application** from IntelliJ
+* In Project Explorer: Browse to the Java Class `ChatbotApplication`
+   \(in `src` folder, simply search the class with `Shift-Shift`-Shortcut in IntelliJ or find it under `src/main/java/ch.hsr.projectautomation.chatbot`\)
+* Select `Run chatbotApplication.main()` from context menu to run the app.
+* See output in the run window console
+* You should see a welcome message and that the started web service is running under port 8080
+   
+## Run All Test
+
+The gradle build allready run all your test, but you can as well run them as follows to see test results nicer in IntelliJ:
+
+* Browse to `src/test/java` in Project browser \(left\)
+* Select `Run All Tests` from context menu
+* All tests should be passed and green
+
 ## CI/CD Jenkins Server
 
 See http://sinv-56080.edu.hsr.ch to access the Jenkins CI Server for the project.
 
 You can use following user account for this exercise:
-
 * username: student
 * password: autom@tion$1
+
+You should see that the last automated CI build on the master branch of the `project-automation` project has run successfully (=blue, not red!).
+
+## Ready to Automate?
+
+**Your environment is now ready** for the course and the exercises 
+
+**What about you? Are you ready as well?** We recommend to read following resources on how to use Git (especially if you are new to Git) as a preparation for the course:
+* [Tutorial for using Git in IntelliJ](tutorial-git-in-intellij.md) in this exercises tutorial explains most important tasks that you need to perform with Git in IntelliJ for the exercises.
+* Git Resources at [https://git-scm.com/doc](https://git-scm.com/doc)
+* Especially the online version of the Git Book:  [https://git-scm.com/book](https://git-scm.com/book)
+
+We are looking forward to see you soon in the course and have some fun with automation together!
