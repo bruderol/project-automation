@@ -184,6 +184,7 @@ Simply **Run the full Gradle build** to execute the full automated build includi
 * Open `Gradle`-Tab: usually on the right side, but first time you might need to choose `View`/`Tool Windows`/`Gradle`.
 * In the tab you should see the project `project-automation`
 * Open `project-automation` and then open `Tasks` and then `build`.
+   * If you do not see any Tasks on the project yet, then right click on `project-automation` and choose `Refresh Gradle project`
 * Select the tasks `clean` and `build` both together and open context menu with right click on them
 * Then select `Run ...` to execute the build with all tests
 * The gradle build will not only build your software but also download all needed dependencies \(**WARNING: This needs a reliable internet connection that does not block maven repositories!**\)
