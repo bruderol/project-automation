@@ -207,12 +207,21 @@ Simply **Run the full Gradle build** to execute the full automated build includi
 * See output in the run window console
 * You should see a welcome message and that the started web service is running under port 8080
 * Open a browser (if you are in the VM use Firefox in the VM)
-* Browse to http://localhost:8080/welcome
-* You should see a nice welcome message screen
+* Browse to http://localhost:8080
+* You should see a nice welcome screen
+
+## Swagger UI for REST API
+
+Our chatbot provides a nice UI to test the REST API.
+
+You can access it through http://localhost:8080/swagger-ui.html
+
+You can choose one of the controllers and try it out by calling the chat service 
+that we are going to extend in the exercise.
    
 ## Run All Test
 
-The gradle build allready run all your test, but you can as well run them as follows to see test results nicer in IntelliJ:
+The gradle build allready run all your tests, but you can as well run them as follows to see test results nicer in IntelliJ:
 
 * Browse to `src/test/java` in Project browser \(left\)
 * Select `Run All Tests` from context menu
