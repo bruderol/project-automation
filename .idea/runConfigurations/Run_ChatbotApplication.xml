@@ -1,6 +1,12 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Run Chatbot (Spring)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="Run ChatbotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <module name="project-automation.main" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="ch.hsr.projectautomation.chatbot.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
     <option name="SPRING_BOOT_MAIN_CLASS" value="ch.hsr.projectautomation.chatbot.ChatbotApplication" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <method v="2">

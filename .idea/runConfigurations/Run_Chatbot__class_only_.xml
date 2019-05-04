@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Run Chatbot (class only)" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="ch.hsr.projectautomation.chatbot.ChatbotApplication" />
-    <module name="project-automation.main" />
-    <method v="2">
-      <option name="Make" enabled="true" />
-    </method>
-  </configuration>
-</component>
