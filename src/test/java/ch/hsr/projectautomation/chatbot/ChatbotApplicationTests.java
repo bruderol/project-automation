@@ -11,6 +11,7 @@ public class ChatbotApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		// Simply checks no exception is occuring when starting the app
 	}
 
 }
