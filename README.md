@@ -8,7 +8,7 @@ See [Development Environment Setup](docs/SETUP.md) for how to develop this demo 
 
 ## Exercise Instructions
 
-See [Docs](docs/README.md) for all further exercise instructions.
+See [Docs](docs) for all further exercise instructions.
 
 ## References / Further Readings
 
