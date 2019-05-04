@@ -5,7 +5,7 @@ to have a working development environment ready for the exercise.
 
 **Please make sure to read and work through the whole document until the end to be fully prepared for the exercise in the course!**
 
-Expected time to complete: max. 60 Minutes
+Expected time to complete: 60 Minutes
 
 ## Register and Get Git Access
 
@@ -25,10 +25,10 @@ We have even automated the setup of a linux developer VM with which you can deve
 
 ### Included Tools
 
-The provided Developer VM contains the following tools needed for the exercise:
+The provided Developer VM contains the following tools that you will need for the exercise:
 
 * **Git, Version 2.7 or higher** 
-    * see https://www.atlassian.com/git/tutorials/install-git for how to install and configure  
+    * in case you want to install it on your own machine, see https://www.atlassian.com/git/tutorials/install-git for how to install and configure  
     * in case you install it on windows it is important to use following options on installation:
       * `[x] Use Git from Windows Command Prompt`
       * `[x] Checkout Windows-style, commit Unix-style line endings`
@@ -76,9 +76,12 @@ Then follow these simple steps to install your VM for the course:
   vagrant plugin install vagrant-vbguest
   vagrant up 
   ```
-			   * Some Hints / Troubleshooting:
-						   * you might have to accept a firewall rule on the first installation step (`vagrant plugin install vagrant-vbguest`): in case you were too slow with accepeting the rule the first step might have failed, in this case just run the first step again
-									* if everything seems to go wrong, try to run `vagrant destroy` on this same directory and start the steps above again								
+  * Some Hints / Troubleshooting:
+    * you might have to accept a firewall rule on the first installation step (`vagrant plugin install vagrant-vbguest`): 
+    in case you were too slow with accepting the rule the first step might have failed, 
+    in this case just run the first step again
+	* if everything seems to go wrong, try to run `vagrant destroy` and start the steps above again
+	* if you see a window during installation that there was not enough memory, you might have to close all other applications and run the installation again (use `vagrant destroy` first to start from scratch again)				
 * This might take a while to install (around 30 minutes typically, so take a coffee and relax! :-D )
 * Once finished you should see `CLEANUP DONE` in the console
 * When done, start the VM with: `vagrant reload`
@@ -94,11 +97,22 @@ The course teachers might not be able to help you in case of troubles with your 
 In case you use your own installation of the tools anyways: Once you installed the above listed tools, 
 please continue with section [Development Environment Configuration](#Development-Environment-Configuration) in this setup tutorial to configure everything as needed.
 
+### Improve VM Performance
+
+By default the VM is configured to use 6 GB of RAM and 3 CPUs.
+
+If you have enough RAM and CPU on your machine then you can use the VirtualBox Manager UI to give the VM more RAM or CPU.
+* You have to stop the VM first to be able to do so.
+* Start Oracle VM VirtualBox
+* Select "Change" on your VM
+* under "System" you find tabs to change RAM and CPU settings
+* When done choose OK and start your VM again
+
 ### Using the VM
 
 #### Start / Stop the VM
 
-Once installed you can start and stop the VM from VirtualBox UI as any other VirtualBox VM.
+* Once installed you can start and stop the VM from VirtualBox UI as any other VirtualBox VM.
 
 #### Login
 
@@ -178,7 +192,7 @@ Please follow carefully these steps to configure the project correctly for work 
   * Default option `(x) Use default gradle wrapper` has to be selected (such that the right gradle version is used for building, as included in the git repository)
   * Gradle JVM: Verify the installed JDK is selected. If not: configure the JDK that is installed by using the '...'-button and browse to the JDK directory.
   * Select `Finish` to create your project and open it in IntelliJ
-  * It may take some time to download all the needed dependency on import, have some patience.
+  * Have some patience, beacuse it might take some time to download all the needed dependencies on import, especially for the gradle wrapper.
 * Finally verify that your Java JDK is configured correctly in your IntelliJ for this project:
   * go to `File`/`Project Structure`
   * in `Project`-Tab under `Project SDK`: the JDK you have installed should be selected - if not yet, you can add it now using `New...` and then browse to the jdk directroy inside your java installation directory.
@@ -190,8 +204,7 @@ Simply **Run the full Gradle build** to execute the full automated build includi
 * In the tab you should see the project `project-automation`
 * Open `project-automation` and then open `Tasks` and then `build`.
    * If you do not see any Tasks on the project yet, then right click on `project-automation` and choose `Refresh Gradle project`
-* Select the tasks `clean` and `build` both together and open context menu with right click on them
-* Then select `Run ...` to execute the build with all tests
+* Select the task `build` and simply execute it by double clicking.
 * The gradle build will not only build your software but also download all needed dependencies \(**WARNING: This needs a reliable internet connection that does not block maven repositories!**\)
 * You should see `BUILD SUCCESSFUL` in the run console window \(bottom of IntelliJ\). If not, there is something wrong with your setup.
 * In the exercise you should execute this same build before each commit to ensure that you did not somehow break the build or some tests - the build of your IDE is a different build and might not necessarily always do exactly the same.
@@ -215,7 +228,7 @@ Simply **Run the full Gradle build** to execute the full automated build includi
 
 Our chatbot provides a nice UI to test the REST API.
 
-You can access it through http://localhost:8080/swagger-ui.html
+You can access it through the welcome page (Link "Start Swagger UI") or directly through http://localhost:8080/swagger-ui.html
 
 You can choose one of the controllers and try it out by calling the chat service 
 that we are going to extend in the exercise.
