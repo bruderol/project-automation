@@ -15,7 +15,7 @@ public class ChatController {
 
 	@RequestMapping(value= "/chat", method = POST)
 	public String sendMessage(String message) {
-		return "wait ... this is work in progress ...";
+		return "Did I get this right? You said: " + message;
 	}
 
 }
