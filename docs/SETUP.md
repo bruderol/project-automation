@@ -206,6 +206,9 @@ Simply **Run the full Gradle build** to execute the full automated build includi
 * Select `Run chatbotApplication.main()` from context menu to run the app.
 * See output in the run window console
 * You should see a welcome message and that the started web service is running under port 8080
+* Open a browser (if you are in the VM use Firefox in the VM)
+* Browse to http://localhost:8080/welcome
+* You should see a nice welcome message screen
    
 ## Run All Test
 
