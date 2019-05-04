@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+
 @RestController
 public class WelcomeController {
 
 	private static final String WELCOME_MESSAGE = "WELCOME TO THE PROJECT AUTOMATION COURSE !";
 
-	@RequestMapping(value= "/welcome", produces = "text/plain")
+	@RequestMapping(value= "/welcome", method= GET, produces = "text/plain")
 	public String getWelcome() throws IOException {
 		InputStream bannerStream = this.getClass().getResourceAsStream("/banner.txt");
 		return WELCOME_MESSAGE + "\n"
