@@ -2,8 +2,6 @@
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 
-
-
 ### STS ###
 .apt_generated
 .classpath
@@ -22,6 +20,7 @@
 
 ### IntelliJ Run Configuraitons (to be shared) ###
 !.idea/runConfigurations
+!.idea/runConfigurations/**
 
 ### NetBeans ###
 /nbproject/private/

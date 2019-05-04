@@ -24,6 +24,6 @@ bootJar.doLast {
 	copy {
 		from bootJar
 		into 'build/libs'
-		rename('chatbot.*.jar', 'chatbot.jar')
+		rename('project-automation.*.jar', 'project-automation-chatbot.jar')
 	}
 }
