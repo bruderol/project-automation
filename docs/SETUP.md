@@ -154,18 +154,26 @@ After you installed the tools you need to do following minimal configurations:
 
 ## Setup Exercise Project
 
+Please follow carefully these steps to configure the project correctly for work in IntelliJ.
+
 * Open IntelliJ
 * Use `Checkout From Version Control/Git` on IntelliJ start screen or `New/Project from sources` 
 * Clone the project sources as follows:
    * URL: https://gitlab.dev.ifs.hsr.ch/mas-se-project-automation/project-automation.git
    * Directory: use a good directory for your project source code e.g. `home/vagrant/workspace/project-automation` is recommended as a directory in the VM (not on a network drive!).
    * Select "Clone"
-* Use the credentials \(username and password for Git\) as you registered yourself with.
+* Use the credentials \(username and password for Git\) as you registered yourself with (if needed for checkout).
 * If it asks you to create a project, select "Yes"
 * Choose `Import project from external model`: `Gradle` and `Next`
-* Default option `(x) Use default gradle wrapper` has to be selected (such that the right gradle version is used for building, as included in the git repository)
-* Gradle JVM: Verify the installed JDK is selected. If not: configure the JDK that is installed by using the '...'-button and browse to the JDK directory.
-* Select `Finish` to create your project and open it in IntelliJ
+   * If it does not ask you to import with Gradle and directly opens the project,
+     then look into the "Event Log" (lower right), 
+     you should see something like "Unlinked Gradle project?",
+     then click on the link "Import Gradle project".
+* Select following options for gradle import:
+  * Default option `(x) Use default gradle wrapper` has to be selected (such that the right gradle version is used for building, as included in the git repository)
+  * Gradle JVM: Verify the installed JDK is selected. If not: configure the JDK that is installed by using the '...'-button and browse to the JDK directory.
+  * Select `Finish` to create your project and open it in IntelliJ
+  * It may take some time to download all the needed dependency on import, have some patience.
 * Finally verify that your Java JDK is configured correctly in your IntelliJ for this project:
   * go to `File`/`Project Structure`
   * in `Project`-Tab under `Project SDK`: the JDK you have installed should be selected - if not yet, you can add it now using `New...` and then browse to the jdk directroy inside your java installation directory.
