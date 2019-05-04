@@ -33,19 +33,24 @@ The provided Developer VM contains the following tools that you will need for th
       * `[x] Use Git from Windows Command Prompt`
       * `[x] Checkout Windows-style, commit Unix-style line endings`
       * apart from that use the default settings \(or whatever you prefer\)
-* **Java OpenJDK, Version 8 or higher** (version 12 should be good as well)
-    * See https://jdk.java.net/12/ in case you want to install it natively
-    * The VM currently contains version 8, which is sufficient     
+      
+* **Java OpenJDK, Version 8**
+    * In case you want to install it natively, you can find it here: https://www.azul.com/downloads/zulu/ (use version 8!)
+    * Make sure you choose a JDK (not just JRE!)
+    * Make sure you use version 8! There seems to be a problem currently with later versions due to one of our used libraries.    
+                    
 * **IntelliJ Ultimate IDEA, Version 2019.1 or higher** 
     * see https://www.jetbrains.com/idea/download/
     * we recommend to use the Ultimate version: 
       you can either use a trial version (for one month) or get e a student licence from here:   
       https://www.jetbrains.com/shop/eform/students
     * IDEA Community Edition might as well work to do most of the exercise, with small limitations
+
 * **Docker, Version 18 or higher**
     * see https://docs.docker.com/install/ in case you want to install it natively   
     * Caution: this might be especially tricky to properly setup on Windows, although things have become better lately, 
       which is one reason why we provide a vagrant based linux dev VM to you.
+
 * Some more, that are not mandatory for the exercise
 
 ### Setup the VM
