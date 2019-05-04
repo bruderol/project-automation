@@ -203,10 +203,11 @@ Simply **Run the full Gradle build** to execute the full automated build includi
 **Starting the application** from IntelliJ
 * In Project Explorer: Browse to the Java Class `ChatbotApplication`
    \(in `src` folder, simply search the class with `Shift-Shift`-Shortcut in IntelliJ or find it under `src/main/java/ch.hsr.projectautomation.chatbot`\)
-* Select `Run chatbotApplication.main()` from context menu to run the app.
+* Select `Run Chatbot` from context menu to run the app.
+* You can as well use the run configurations in IntelliJ available in upper right run configuration dropdown to run the application 
 * See output in the run window console
 * You should see a welcome message and that the started web service is running under port 8080
-* Open a browser (if you are in the VM use Firefox in the VM)
+* Open a browser (if you are in the VM use the browser from within the VM! e.g. Firefox)
 * Browse to http://localhost:8080
 * You should see a nice welcome screen
 
