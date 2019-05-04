@@ -69,11 +69,16 @@ Then follow these simple steps to install your VM for the course:
 * On Windows: Make sure you turned off "Hyper-V"
      * VMs on Windows 10 do not work with Hyper V enabled
      * See here for how to disable it: https://ugetfix.com/ask/how-to-disable-hyper-v-in-windows-10/    
-* Open a command line console in the directory where you unzipped the ZIP file and use following commands to setup the VM:
+* Open a command line console in the same directory where you unzipped the ZIP file 
+* Make sure to go into the same folder where the `Vagrantfile` is!
+* Use following commands to setup the VM in this folder:
   ``` 
   vagrant plugin install vagrant-vbguest
   vagrant up 
   ```
+			   * Some Hints / Troubleshooting:
+						   * you might have to accept a firewall rule on the first installation step (`vagrant plugin install vagrant-vbguest`): in case you were too slow with accepeting the rule the first step might have failed, in this case just run the first step again
+									* if everything seems to go wrong, try to run `vagrant destroy` on this same directory and start the steps above again								
 * This might take a while to install (around 30 minutes typically, so take a coffee and relax! :-D )
 * Once finished you should see `CLEANUP DONE` in the console
 * When done, start the VM with: `vagrant reload`
