@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 public class ChatBotFactory {
 
 	@Autowired
-	ChatBotRegistry botRegistry;
+	private ChatBotRegistry botRegistry;
 
 	@PostConstruct
 	public void init() {
