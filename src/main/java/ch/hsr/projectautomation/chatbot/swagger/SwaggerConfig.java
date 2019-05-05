@@ -26,7 +26,6 @@ public class SwaggerConfig {
 	private ApiInfo apiEndPointsInfo() {
 		return new ApiInfoBuilder().title("Project Automation Chatbot REST API")
 			.description("Sample Project for Project Automation Course Exercises")
-			.contact("Rolf Bruderer and Jean-Daniel Merkli")
 			.version("1.0.0")
 			.build();
 	}
