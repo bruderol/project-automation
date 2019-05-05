@@ -17,7 +17,15 @@ public class WelcomeBot implements ChatBot {
 	@Override
 	public boolean canHandleMessage(String message) {
 		String msg = message.toLowerCase();
-		return msg.contains("hello") || msg.contains("hi") || msg.contains("welcome") || msg.contains("hoi");
+		return msg.contains("hello")
+			|| msg.contains("hi")
+			|| msg.contains("welcome")
+			|| msg.contains("hoi")
+			|| msg.contains("hallo")
+			|| msg.contains("buon giorno")
+			|| msg.contains("salut")
+			|| msg.contains("bon jour")
+			|| msg.contains("nice");
 	}
 
 	@Override
@@ -25,7 +33,7 @@ public class WelcomeBot implements ChatBot {
 		String msg = message.toLowerCase();
 		if (msg.contains("hello") || msg.contains("hi")) {
 			return "Hello, welcome to the project automation chat! How are you?";
-		} else  if (msg.contains("hoi")) {
+		} else if (msg.contains("hoi")) {
 			return "Hoi, wie goht's?";
 		} else {
 			return "Nice to meet you!";

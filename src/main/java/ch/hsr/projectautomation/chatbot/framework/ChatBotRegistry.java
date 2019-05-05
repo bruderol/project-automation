@@ -28,7 +28,7 @@ public class ChatBotRegistry {
 		}
 		for (ChatBot existingBot : bots) {
 			if (bot.getName().equals(existingBot.getName())) {
-				throw new IllegalArgumentException("Already registered bot with same name implemented in class " + existingBot.getClass().getName() +". Please rename one of the bots.");
+				throw new IllegalArgumentException("Bot with name '" + bot.getName() + "' already exists. Bot with same name implemented in class " + existingBot.getClass().getName() +". Please rename one of the bots.");
 			}
 		}
 	}

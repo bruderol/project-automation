@@ -2,15 +2,22 @@ package ch.hsr.projectautomation.chatbot.rest;
 
 import ch.hsr.projectautomation.chatbot.framework.Answer;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.Assert.assertNotNull;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ChatControllerTest {
-	
-	private ChatController chatController = new ChatController();
+
+	@Autowired
+	private ChatController chatController;
 
 	@Test
 	public void emptyMessageAnsweredByDefaultBot() {
@@ -69,10 +76,6 @@ public class ChatControllerTest {
 		assertThat(botName).isEqualTo("R2D2");
 		String answerMsg = answers.get(0).getAnswer();
 		assertThat(answerMsg).isEqualTo("Hoi, wie goht's?");
-
 	}
-
-
-
 
 }

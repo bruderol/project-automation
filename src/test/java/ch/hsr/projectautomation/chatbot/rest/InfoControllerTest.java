@@ -6,13 +6,13 @@ import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class WelcomeControllerTest {
+public class InfoControllerTest {
 	
-	private WelcomeController welcomeController = new WelcomeController();
+	private InfoController infoController = new InfoController();
 	
 	@Test
 	public void doesReturnAMessage() throws IOException {
-		String welcome = welcomeController.getWelcome();
+		String welcome = infoController.getWelcome();
 		assertThat(welcome).isNotNull();
 		assertThat(welcome).contains("Demo Application for Course Project Automation");
 	}
