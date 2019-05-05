@@ -16,7 +16,7 @@ public class ChatController {
 	@Autowired
 	ChatService chatService;
 
-	@RequestMapping(value= "/chat", method = POST)
+	@RequestMapping(value = "/chat", method = POST)
 	public List<Answer> chat(String message) {
 		return chatService.getAnswers(message);
 	}

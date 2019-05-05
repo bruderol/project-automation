@@ -14,7 +14,7 @@ public class InfoController {
 
 	private static final String WELCOME_MESSAGE = "WELCOME TO THE PROJECT AUTOMATION COURSE !";
 
-	@RequestMapping(value= "/info", method= GET, produces = "text/plain")
+	@RequestMapping(value = "/info", method = GET, produces = "text/plain")
 	public String getWelcome() throws IOException {
 		InputStream bannerStream = this.getClass().getResourceAsStream("/banner.txt");
 		return WELCOME_MESSAGE + "\n"

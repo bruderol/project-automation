@@ -11,7 +11,7 @@ public class WelcomeBot implements ChatBot {
 
 	@Override
 	public String getDescription() {
-		return "Says something stupid about meaningless topics, like 'Hello'.";
+		return "Is friendly to friendly people, that say something like 'Hello'.";
 	}
 
 	@Override

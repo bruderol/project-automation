@@ -15,6 +15,7 @@ public class ChatBotRegistry {
 
 	/**
 	 * Register a bot that can handle a topic.
+	 *
 	 * @param bot the bot to register, needs to have a unique name for being able to register
 	 */
 	public void registerBot(ChatBot bot) {
@@ -28,7 +29,7 @@ public class ChatBotRegistry {
 		}
 		for (ChatBot existingBot : bots) {
 			if (bot.getName().equals(existingBot.getName())) {
-				throw new IllegalArgumentException("Bot with name '" + bot.getName() + "' already exists. Bot with same name implemented in class " + existingBot.getClass().getName() +". Please rename one of the bots.");
+				throw new IllegalArgumentException("Bot with name '" + bot.getName() + "' already exists. Bot with same name implemented in class " + existingBot.getClass().getName() + ". Please rename one of the bots.");
 			}
 		}
 	}

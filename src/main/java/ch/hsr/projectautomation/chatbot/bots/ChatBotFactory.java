@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 
 /**
  * To create and register all bots on startup.
- *
+ * <p>
  * New bots need to be created and registered here.
  */
 @Component
