@@ -6,11 +6,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Service that implements the chatting using all bots in the bot registry.
+ */
 @Service
 public class ChatService {
 
 	@Autowired
-	ChatBotRegistry botRegistry;
+	private ChatBotRegistry botRegistry;
 
 	public List<Answer> getAnswers(String message) {
 		List<Answer> answers = new ArrayList<Answer>();

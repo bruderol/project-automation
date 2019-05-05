@@ -1,5 +1,8 @@
 package ch.hsr.projectautomation.chatbot.framework;
 
+/**
+ * DTO for answers by bots to deliver them to users
+ */
 public class Answer {
 
 	private String botName;

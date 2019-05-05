@@ -10,6 +10,9 @@ import java.util.List;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
+/**
+ * REST Service to get all meta info about all available bots in the chat
+ */
 @RestController
 public class BotController {
 

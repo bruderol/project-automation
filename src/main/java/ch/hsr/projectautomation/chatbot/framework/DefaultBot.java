@@ -1,5 +1,8 @@
 package ch.hsr.projectautomation.chatbot.framework;
 
+/**
+ * A default bot to handle all otherwise unhandled messages
+ */
 public class DefaultBot implements ChatBot {
 
 	@Override

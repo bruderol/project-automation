@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Registry component to register chat bots in the application
+ */
 @Component
 public class ChatBotRegistry {
 
