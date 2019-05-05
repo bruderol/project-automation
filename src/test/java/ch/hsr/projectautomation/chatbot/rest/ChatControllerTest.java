@@ -62,19 +62,4 @@ public class ChatControllerTest {
 
 	}
 
-	@Test
-	public void hoiAnsweredByWelcomeBot() {
-
-		// Exactly one answer for meaningless message
-		List<Answer> answers = chatController.chat("Hoi du");
-		assertThat(answers).isNotEmpty();
-		assertThat(answers).hasSize(1);
-
-		// Expected answer by R2D2
-		String botName = answers.get(0).getBotName();
-		assertThat(botName).isEqualTo("R2D2");
-		String answerMsg = answers.get(0).getAnswer();
-		assertThat(answerMsg).isEqualTo("Hoi, wie goht's?");
-	}
-
 }
