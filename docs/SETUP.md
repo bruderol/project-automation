@@ -261,7 +261,7 @@ You should see that the last automated CI build on the master branch of the `pro
 **Your environment is now ready** for the course and the exercises 
 
 **What about you? Are you ready as well?** We recommend to read following resources on how to use Git (especially if you are new to Git) as a preparation for the course:
-* [Tutorial for using Git in IntelliJ](tutorial-git-in-intellij.md) in this exercises tutorial explains most important tasks that you need to perform with Git in IntelliJ for the exercises.
+* [Tutorial for using Git in IntelliJ](guide-git-in-intellij.md) in this exercises tutorial explains most important tasks that you need to perform with Git in IntelliJ for the exercises.
 * Git Resources at [https://git-scm.com/doc](https://git-scm.com/doc)
 * Especially the online version of the Git Book:  [https://git-scm.com/book](https://git-scm.com/book)
 

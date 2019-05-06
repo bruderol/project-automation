@@ -23,9 +23,9 @@
 **Tutorials / Guides:**
 
 Included in this document and also in the source repository you find 2 tutorials to help you:
-1.	[Development Environment Tutorial](../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-development-environment-setup.md):
+1.	[Development Environment Tutorial](../../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-development-environment-setup.md):
 Explains how to setup the development environment for this exercise and how to run the build, tests and the application.
-2.	[Git in IntelliJ Tutorial](../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-git-in-intellij.md):
+2.	[Git in IntelliJ Tutorial](../../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-git-in-intellij.md):
 The separate Git-usage tutorial will help you with Git usage in IntelliJ for this exercise.
 
 **Solutions / Cheat Sheets:**

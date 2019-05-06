@@ -5,7 +5,7 @@ Some more useful guides and doccumentation about used technologies in this demo 
 ## Git
 
 Recommended tutorials for using Git, in case you are new to Git or need help:
- * [Tutorial for using Git in IntelliJ](tutorial-git-in-intellij.md) in the course exercise project explains most important tasks that you need to perform with Git in IntelliJ for the exercises
+ * [Tutorial for using Git in IntelliJ](guide-git-in-intellij.md) in the course exercise project explains most important tasks that you need to perform with Git in IntelliJ for the exercises
  * [https://git-scm.com/doc](https://git-scm.com/doc)
  * online version of the book [https://git-scm.com/book](https://git-scm.com/book)
 
@@ -33,6 +33,7 @@ Jenkins is used to automate the Continuous Integration and Continuous Deployment
 
 ## Docker
 
-To package our app with other needed infrastructure for deployments, we use docker in the exercises for containerization of our deployments.
+To package our app with other needed infrastructure for deployments, 
+we use docker in the exercises for containerization of our deployments.
 
 * TODO: add some docs

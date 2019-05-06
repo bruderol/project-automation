@@ -14,12 +14,13 @@ before the course and the exercises:
 The following tutorial explains the most important steps that you need to be able to perform with Git in IntelliJ  
 for solving the exercises \(use it as a reference during the exercises\):
 
-[Tutorial Git in IntelliJ](tutorial-git-in-intellij.md)
+[Tutorial Git in IntelliJ](guide-git-in-intellij.md)
 
 ## Exercises
 
-All the exercise instructions and solutions start [here](exercise-introduction.md)
-
+* [Exercise 1](exercise1/README.md) is about Continuous Integration.
+* [Exercise 2](exercise2/README.md) is about Continuous Deployment.
+ 
 ## Version
 
 2019-05 - This version was prepared for the course 2019-05
