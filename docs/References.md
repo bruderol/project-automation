@@ -36,4 +36,4 @@ Jenkins is used to automate the Continuous Integration and Continuous Deployment
 To package our app with other needed infrastructure for deployments, 
 we use docker in the exercises for containerization of our deployments.
 
-* TODO: add some docs
+* will follow soon ...

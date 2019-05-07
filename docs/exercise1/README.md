@@ -11,7 +11,6 @@
 * Learn how to work with source control systems and branches
 * Learn how to use Git (checkout, commit, push, pull, branching, merging, ...)
 * Learn how to work with a Continuous Integration build server (Jenkins)
-* Learn how to automate continuous delivery and deployment with Gradle, Jenkins Pipelines and Docker
 
 **Work in Feature Teams:**
 * You have to work in **teams of 4-6 developers** for this exercise
@@ -23,9 +22,9 @@
 **Tutorials / Guides:**
 
 Included in this document and also in the source repository you find 2 tutorials to help you:
-1.	[Development Environment Tutorial](../../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-development-environment-setup.md):
+1.	[Development Environment Tutorial](../SETUP.md):
 Explains how to setup the development environment for this exercise and how to run the build, tests and the application.
-2.	[Git in IntelliJ Tutorial](../../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-git-in-intellij.md):
+2.	[Git in IntelliJ Tutorial](../guide-git-in-intellij.md):
 The separate Git-usage tutorial will help you with Git usage in IntelliJ for this exercise.
 
 **Solutions / Cheat Sheets:**

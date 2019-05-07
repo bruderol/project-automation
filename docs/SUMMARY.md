@@ -1,7 +1,7 @@
 # Project Automation Exercises
 
 Setup & Guides
-* [Development Environment Setup](SETUP.MD)
+* [Development Environment Setup](SETUP.md)
 * [Git in IntelliJ](guide-git-in-intellij.md)
 
 Exercise 1

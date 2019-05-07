@@ -50,12 +50,12 @@ The goal of your team is to write funny chat bots to contribute to our chat bot 
 
 **Hints:**
 * Consider the slides about `Continuous Integration` from lecture about the CI process
-* Consider the [Tutorial for Development Environment](../../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-development-environment-setup.md) for help with the development environment
-* Consider the [Tutorial for using Git in IntelliJ](../../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/tutorial-git-in-intellij.md) for working with Git
+* Consider the [Tutorial for Development Environment](../SETUP.md) for help with the development environment
+* Consider the [Tutorial for using Git in IntelliJ](../guide-git-in-intellij.md) for working with Git
 
 **Solution / Cheat Sheet:**
 In case of problems or to not loose to much time with coding,
-just consider the [Solution for Task 1](../../../rbr/SecureSafe/ProjectAutomation/Resources/Labs/code/hsr-mas-project-automation/exercise/solution-task-1.md)
+just consider the [Solution for Task 1](solution-task-1.md)
 about how a simple "funny chat bot" implementation might look like.
 
 **Done??**
