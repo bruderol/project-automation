@@ -5,8 +5,7 @@ You can browse this exercise online here: https://bruderol.gitbooks.io/project-a
 **Story / Context:**
 * Let's do a continuous integration hackaton and have some fun!
 * We implement together the most clever chat system of all times ;-)
-* At the end of the day we want to have a well tested chat system that works and is feature complete
-* All features need to work together well integrated
+* At the end of the day we want to have a well tested chat system with well integrated features
 
 **Exercise Goals:**
 * Learn how to work with Continuous Integration in a team
