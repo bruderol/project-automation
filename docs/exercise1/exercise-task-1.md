@@ -18,7 +18,7 @@ The goal of your team is to write funny chat bots to contribute to our chat bot 
 7. Implement the `getAnswer(..)` method to give some funny answers depending on the keywords.
 8. Create and register your bot in the class `ChatBotFactory`
 9. Write a test for your bot similar to `WelcomeBotTest` (you can copy and adjust it)
-10. Make sure all tests are still passing (`src/test/Run all Tests ...` or `Gradle/Tasks/build`). $
+10. Make sure all tests are still passing (`src/test/Run all Tests ...` or `Gradle/Tasks/build`).
 11. If any test fails, you need to fix it.
 12. Commit your changes (`Version control` rider at the bottom left, choose `Local Changes`, select all changes and select `Commit ...` from context menu)
      * please review in the commit dialog all your changes carefully and only commit what you really wanted to change!

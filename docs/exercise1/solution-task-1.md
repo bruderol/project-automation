@@ -41,6 +41,8 @@ Register your bot inside method `init()` in `ChatBotFactory` class:
 botRegistry.registerBot(new WelcomeBot());
 ```
 
+
+
 You have at least to adjust the `ChatBotRegistrationTest` to reflect the newly added bot:
 ```
 
