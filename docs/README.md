@@ -18,8 +18,8 @@ for solving the exercises \(use it as a reference during the exercises\):
 
 ## Exercises
 
-* [Exercise 1](exercise1/README.md) is about Continuous Integration.
-* [Exercise 2](exercise2/README.md) is about Continuous Deployment.
+* [Exercise 1](exercise1) is about Continuous Integration.
+* [Exercise 2](exercise2) is about Continuous Deployment.
  
 ## Version
 
