@@ -2,6 +2,8 @@
 
 Instructions for the Exercises of the `Project Automation` Course by Jean-Daniel Merkli and Rolf Bruderer.
 
+An online version of this exercise sheets can be found here: https://bruderol.gitbooks.io/project-automation-exercises/
+
 ## Development Environment
 
 Please follow and read the following tutorial to prepare your development environment  

@@ -1,4 +1,6 @@
-# Exercise Introduction
+# Exercise 1 - Introduction
+
+You can browse this exercise online here: https://bruderol.gitbooks.io/project-automation-exercises/content/exercise1/
 
 **Story / Context:**
 * Let's do a continuous integration hackaton and have some fun!
