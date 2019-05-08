@@ -4,23 +4,29 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'jacoco'
 
 group = 'ch.hsr.projectautomation'
 version = '0.0.1-SNAPSHOT'
+
 sourceCompatibility = '1.8'
+targetCompatibility = 1.8
+
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.apache.commons:commons-lang3:3.0.1'
 	compile 'commons-io:commons-io:2.4'
 	compile 'io.springfox:springfox-swagger2:2.8.0'
 	compile 'io.springfox:springfox-swagger-ui:2.8.0'
-	
+
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
-	
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testCompile 'org.assertj:assertj-core:3.11.1'
 }
